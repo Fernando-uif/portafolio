@@ -1,0 +1,24 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fernando-ui/Portafolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fernando-ui/Portafolio/issues"
+  },
+  "homepage": "https://github.com/Fernando-ui/Portafolio#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

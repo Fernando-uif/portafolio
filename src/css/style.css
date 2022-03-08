@@ -1,0 +1,38 @@
+:root {
+  --font-family: 'Noto Sans', sans-serif;
+  --font-weight-normal:300;
+  --font-weight-bold:700;
+  --color-primario:#2A4899;
+  --color-secundario:#1A8989;
+  --color-terciario:#E4A62B;
+  --color-blanco:#fff; }
+
+*,
+*::afer,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px;
+  height: 100vh;
+  width: 100vw; }
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0; }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-primario);
+  padding: 1rem 0;
+  position: sticky; }
+  .nav__element {
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: .9rem;
+    color: var(--color-blanco); }
