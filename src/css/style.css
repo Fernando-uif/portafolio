@@ -2,9 +2,9 @@
   --font-family: 'Noto Sans', sans-serif;
   --font-weight-normal:300;
   --font-weight-bold:700;
-  --color-primario:#2A4899;
-  --color-secundario:#1A8989;
-  --color-terciario:#E4A62B;
+  --color-primario:rgb(41, 41, 128);
+  --color-secundario:rgb(25, 102, 161);
+  --color-terciario:rgb(16, 172, 105);
   --color-blanco:#fff; }
 
 *,
@@ -22,17 +22,14 @@ html {
 body {
   font-family: 'Noto Sans', sans-serif;
   box-sizing: border-box;
-  margin: 0; }
+  margin: 0;
+  padding: 1rem; }
 
-.nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--color-primario);
-  padding: 1rem 0;
-  position: sticky; }
-  .nav__element {
-    text-decoration: none;
-    font-size: 1.6rem;
-    padding: 1rem;
-    border-radius: .9rem;
-    color: var(--color-blanco); }
+.header {
+  background-image: linear-gradient(to right bottom, rgba(41, 41, 128, 0.8), rgba(25, 102, 161, 0.8)), url("../assets/code-image.jpg");
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
