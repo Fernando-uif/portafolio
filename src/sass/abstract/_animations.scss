@@ -1,0 +1,9 @@
+@keyframes deslizar{
+    0%{
+        transform:translateX(-200%) skew( 20deg);
+    }
+    
+    100%{
+        transform:translateX(0%) skew( 0deg) ;
+    }
+} 
