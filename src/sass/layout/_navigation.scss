@@ -37,5 +37,10 @@
     }
     &__circle:hover &__line::before{
         top:-1rem; 
+        height:.15rem;
     }    
-}            
+    &__circle:hover &__line::after{
+        top:1rem; 
+        height:.15rem;
+    }      
+}             

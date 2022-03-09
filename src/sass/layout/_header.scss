@@ -13,7 +13,8 @@
         left:calc(100vw / 6 );
         top:10rem;
         text-align:center;   
-        animation:deslizar 2s ease forwards;              
+        transform:translateX(-200%);
+        animation:deslizar 2s ease .6s forwards;               
     }
     &__saludo-1, &__saludo-2{
         font-size: var(--font-size-3);
@@ -24,8 +25,9 @@
     }
     &__saludo-1{
         letter-spacing: 1.5rem; 
-        margin-bottom:2rem;
-    } 
+        margin-bottom:2rem;  
+        padding-bottom:.1rem;
+    }    
     &__saludo-2{
         letter-spacing: 1.2rem;
     } 
@@ -43,4 +45,4 @@
         border:.1rem solid red;
     } 
 }   
-             
+ 

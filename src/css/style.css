@@ -69,7 +69,11 @@ body {
     left: -.1rem;
     top: -.8rem; }
   .nav__circle:hover .nav__line::before {
-    top: -1rem; }
+    top: -1rem;
+    height: .15rem; }
+  .nav__circle:hover .nav__line::after {
+    top: 1rem;
+    height: .15rem; }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(41, 41, 128, 0.8), rgba(25, 102, 161, 0.8)), url("../assets/code-image.jpg");
@@ -86,7 +90,8 @@ body {
     left: calc(100vw / 6);
     top: 10rem;
     text-align: center;
-    animation: deslizar 2s ease forwards; }
+    transform: translateX(-200%);
+    animation: deslizar 2s ease .6s forwards; }
   .header__saludo-1, .header__saludo-2 {
     font-size: var(--font-size-3);
     color: var(--color-blanco);
@@ -95,7 +100,8 @@ body {
     text-transform: uppercase; }
   .header__saludo-1 {
     letter-spacing: 1.5rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    padding-bottom: .1rem; }
   .header__saludo-2 {
     letter-spacing: 1.2rem; }
   .header__photo {
@@ -110,3 +116,7 @@ body {
     background-size: contain;
     background-position: center;
     border: .1rem solid red; }
+
+.info__container {
+  display: flex;
+  justify-content: space-around; }
