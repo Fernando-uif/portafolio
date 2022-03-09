@@ -1,0 +1,37 @@
+.nav{
+    position:relative;
+    &__circle{
+        width:5rem;
+        height:5rem;
+        background-color:var(--color-terciario);
+        border-radius: 50%;
+        position:fixed;
+        left:92%; 
+        top:3rem;
+        cursor:pointer;
+    }  
+    &__line{
+        width:3rem;
+        height:.2rem;
+        background-color:var(--color-blanco);
+        text-align:center;
+        position:absolute;
+        top:2.4rem;
+        left:1.2rem;
+    }  
+    &__line::after, &__line::before{
+        content:'';
+        width:3rem; 
+        height:.2rem;
+        background-color:var(--color-blanco);
+        position:absolute; 
+    }
+    &__line::after{
+        left:-.1rem;
+        top:.8rem;  
+    }
+    &__line::before{
+        left:-.1rem;
+        top:-.8rem;
+    }  
+}
