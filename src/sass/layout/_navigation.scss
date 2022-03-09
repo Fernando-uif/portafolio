@@ -10,8 +10,9 @@
         top:3rem;
         cursor:pointer;
     }  
+       
     &__line{
-        width:3rem;
+        width:3rem;   
         height:.2rem;
         background-color:var(--color-blanco);
         text-align:center;
@@ -33,5 +34,8 @@
     &__line::before{
         left:-.1rem;
         top:-.8rem;
-    }  
-}
+    }
+    &__circle:hover &__line::before{
+        top:-1rem; 
+    }    
+}            
