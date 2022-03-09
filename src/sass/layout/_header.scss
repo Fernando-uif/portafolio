@@ -13,7 +13,7 @@
         left:calc(100vw / 6 );
         top:10rem;
         text-align:center;   
-        animation:deslizar 2s ease forwards;
+        animation:deslizar 2s ease forwards;              
     }
     &__saludo-1, &__saludo-2{
         font-size: var(--font-size-3);
@@ -30,6 +30,17 @@
     &__saludo-2{
         letter-spacing: 1.2rem;
     } 
-    
-}
+    &__photo{
+        clip-path: circle( );
+        background-color:var(--color-blanco);
+        width:calc(100vw / 4 );
+        height:20rem;
+        position:absolute;
+        top:10rem;  
+        right:10rem;   
+        background-image:url('https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U');
+        background-size:contain;
+        background-position:center; 
+    } 
+}   
              
