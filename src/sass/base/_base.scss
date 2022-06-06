@@ -8,11 +8,10 @@
 html{
     font-size:10px;
     min-height:100vh;
-    // min-width: 100vw;
 }
 
 body{
-    background-color:var(--color-blanco);
+    background-color:$color-blanco;
     font-family: 'Noto Sans', sans-serif;   
     box-sizing:border-box;
     margin:0;
