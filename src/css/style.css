@@ -33,7 +33,7 @@ body {
   margin-bottom: 2rem; }
   .header__container-title {
     position: absolute;
-    left: calc(100vw / 6);
+    left: calc(100vw / 2 - 35rem);
     top: 10rem;
     text-align: center;
     transform: translateX(-200%);
@@ -60,7 +60,8 @@ body {
   font-size: 3.4rem;
   font-family: "Noto Sans", sans-serif;
   text-transform: capitalize;
-  letter-spacing: 0.3rem; }
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem; }
 
 .aboutme__container {
   display: flex;
@@ -73,15 +74,9 @@ body {
   .aboutme__container-info {
     text-align: center;
     font-size: 2rem;
-    padding: 5rem; }
+    padding: 5rem;
+    width: 60rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
   .aboutme__container-photo img {
     border-radius: 9.5rem;
     width: 25rem; }
-
-.info span {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 5rem; }
-
-.info__photo {
-  width: 20rem;
-  height: 20rem; }
