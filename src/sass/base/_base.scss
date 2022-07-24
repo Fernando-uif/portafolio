@@ -1,6 +1,6 @@
 
 @import '../abstract/variable';
-
+@import '../abstract/mixins';
 *,
 *::afer,
 *::before{  
@@ -14,8 +14,16 @@ html{
 }
 
 body{
-    background-color:$color-blanco;
+    background-color:#fff;
     font-family: 'Raleway', sans-serif;    box-sizing:border-box;
     margin:0;
     padding:1rem;
+}
+
+.title{
+    @include title;
+}
+
+.text{
+    @include text;
 }

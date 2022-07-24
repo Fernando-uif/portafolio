@@ -1,9 +1,7 @@
 @import '../abstract/mixins';
 @import '../abstract/variable';
 .aboutme {
-  &__title {
-    @include title;
-  } 
+
   &__container {
     display: flex;
     justify-content: space-around;
@@ -16,22 +14,22 @@
     &-info {
       text-align: justify;
       font-size: 2rem;
-      padding: 5rem;
+      padding: 3rem;
       width: 60rem;
       box-shadow: $box-shadow;
-      transition:transform .5s ease-in;
+      transition:transform .3s linear;
       & span{
         font-weight: 600;
       }
       &:hover{   
-        transform:scale(1.01);        
+        transform:scale(1.1);          
       }
     }      
-    &-photo img {
+    &-photo img {     
         border-radius: 9.5rem;   
       width: 25rem;
     } 
   }    
     
 }  
-    
+     

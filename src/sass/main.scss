@@ -1,9 +1,12 @@
+@import './abstract/animations';
+@import './abstract/variable';
+@import "./abstract/mixins";
+
 @import "./base/base";
 
-@import "./abstract/mixins", "./abstract/animations";
-
-
-@import "./layout/footer",  "./layout/header",
-  "./layout/info";
- 
+@import './layout/experience';
+@import './layout/header';
+@import './layout/info';
 @import './layout/tecnologies';  
+@import "./layout/footer";
+     
