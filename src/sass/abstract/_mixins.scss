@@ -1,0 +1,15 @@
+@mixin title {
+    font-size: 3.8rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: .3rem;
+}    
+@mixin subTitle {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: .3rem;
+    @content
+} 

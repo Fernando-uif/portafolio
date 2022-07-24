@@ -1,0 +1,40 @@
+@import '../abstract/variable';
+@import '../abstract/mixins';
+
+.tecnologies{
+    margin-bottom: 4rem;
+    &__title{
+        @include title;
+    }
+    &__card{
+        height: 28rem;
+        // box-shadow: $box-shadow; 
+        padding:1rem;
+        text-align: center; 
+        & span{
+            @include subTitle{
+                display:block;
+            }
+        } 
+    }  
+    &__cards{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    &__items{
+        // background-color: red;
+        // &-1 circle{
+        //     position:relative;
+        //     width: 100%;
+        //     fill: transparent;
+        //     stroke-width: 2;
+        //     stroke: yellow;
+        //     &:nth-child(2){
+        //         stroke:blue;
+        //         stroke-dasharray: 266;
+        //         stroke-dashoffset: calc(280 - (280 * #{$number})  / 100 );
+        //     }
+        // } 
+        
+    }
+}                  
