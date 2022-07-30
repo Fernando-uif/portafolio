@@ -1,5 +1,6 @@
 @import "../abstract/variable";
 .experience {
+  margin-bottom: 10rem;
   &__description {
     width: 66rem;
     & a {
@@ -22,4 +23,5 @@
   &__image img {
     width: 70rem;
   }
-}
+} 
+  
