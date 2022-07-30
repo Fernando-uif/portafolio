@@ -1,6 +1,6 @@
 @import "../abstract/variable";
 @import "../abstract/mixins";
-@import '../abstract/animations';
+@import "../abstract/animations";
 
 .tecnologies {
   margin-bottom: 4rem;
@@ -8,27 +8,58 @@
     opacity: 0;
     height: 28rem;
     position: relative;
-    padding: 1rem; 
+    padding: 1rem;
     text-align: center;
+    position: relative;
     & span {
-      @include subTitle {   
+      @include subTitle {
         display: block;
       }
     }
-  }   
-  &__fade_in{    
-    position:relative;
+    // &:after, &:before {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   left:0;
+    //   background:  linear-gradient(
+        
+    //     rgba(107, 107, 202, 0.8), 
+    //     rgba(103, 151, 188, 0.8)
+    //   );
+    //   transition: height 0.5s, width .5s ease;
+    // } 
+    // &:before {
+    //   height: 1%;
+    //   bottom: 0;
+    //   width: 0;
+    //   box-shadow: 0 -28rem blue;
+    // }
+    // &:after {
+    //   top: 0;   
+    //   width: 1%;
+    //   height: 0;    
+    // }
+    // &:hover {
+    //   &::after{
+    //     height: 100%;
+    //   }
+    //   &::before{
+    //     width: 100%;
+    //   }
+    // }
+  }
+  &__fade_in {
+    position: relative;  
     animation: fade_in 1s ease forwards;
   }
-  &__fade_out{
-    position:relative;
+  &__fade_out {
+    position: relative;
     animation: fade_out 1s ease forwards;
   }
   &__cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;   
-    margin-bottom: 15rem; 
+    gap: 1rem;
+    margin-bottom: 9rem;
   }
 }
-        

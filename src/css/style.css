@@ -54,6 +54,15 @@ body {
   text-align: center;
   letter-spacing: .3rem; }
 
+.line {
+  text-align: center; }
+  .line div {
+    height: .1rem;
+    background-color: #4a85b2;
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 2rem; }
+
 .experience {
   margin-bottom: 10rem; }
   .experience__description {
@@ -171,7 +180,7 @@ body {
 
 .projects__tecnologiesUsed {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(5, 1fr); }
   .projects__tecnologiesUsed span img {
     width: 4rem; }
 
@@ -200,7 +209,8 @@ body {
     height: 28rem;
     position: relative;
     padding: 1rem;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .tecnologies__card span {
       font-size: 2.4rem;
       text-transform: capitalize;
@@ -218,4 +228,4 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    margin-bottom: 15rem; }
+    margin-bottom: 9rem; }

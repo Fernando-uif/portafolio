@@ -30,3 +30,14 @@ body{
 .subtitle{
     @include subTitle;
 }
+
+.line{
+    text-align:center;
+    & div{
+        height: .1rem;
+        background-color: rgb(74, 133, 178);
+        width: 50%;
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+}
