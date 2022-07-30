@@ -7,33 +7,36 @@
     & div {
       margin-bottom: 2rem;
     }
+    &-back {
+      transform: rotateY(180deg);
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & a {
+        text-decoration: none;
+        color:$color-blanco;
+      }
+    }
   }
   &__cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-bottom: 4rem;
+    height: 40rem;
     &__container {
       perspective: 100rem;
-      position:relative;
+      position: relative;
       &-card {
         height: 17rem;
         box-shadow: $box-shadow;
-        backface-visibility: hidden;  
+        backface-visibility: hidden;
         position: absolute;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         width: 100%;
-
         transition: transform 1s ease;
-
-        &-back { 
-          transform: rotateY(180deg);
-          background-color: #333;   
-          display:flex;
-          justify-content: center;
-          align-items: center;
-        }
       }
       &:hover &-card-front {
         transform: rotateY(180deg);
@@ -41,13 +44,13 @@
       &:hover &-card-back {
         transform: rotateY(0);
       }
-    }    
-  }  
-  &__tecnologiesUsed { 
+    }
+  }
+  &__tecnologiesUsed {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     & span img {
-      width: 4rem;  
+      width: 4rem;
     }
   }
-} 
+}
