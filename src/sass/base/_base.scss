@@ -24,13 +24,15 @@ body{
     @include title;
 }
 
-.text{
-    @include text;
-}
 .subtitle{
     @include subTitle;
 }
-
+.text{
+    @include text;
+}
+.details{
+    @include details;
+}
 .line{
     text-align:center;
     & div{

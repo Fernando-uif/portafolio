@@ -16,37 +16,7 @@
         display: block;
       }
     }
-    // &:after, &:before {
-    //   content: "";
-    //   display: block;
-    //   position: absolute;
-    //   left:0;
-    //   background:  linear-gradient(
-        
-    //     rgba(107, 107, 202, 0.8), 
-    //     rgba(103, 151, 188, 0.8)
-    //   );
-    //   transition: height 0.5s, width .5s ease;
-    // } 
-    // &:before {
-    //   height: 1%;
-    //   bottom: 0;
-    //   width: 0;
-    //   box-shadow: 0 -28rem blue;
-    // }
-    // &:after {
-    //   top: 0;   
-    //   width: 1%;
-    //   height: 0;    
-    // }
-    // &:hover {
-    //   &::after{
-    //     height: 100%;
-    //   }
-    //   &::before{
-    //     width: 100%;
-    //   }
-    // }
+
   }
   &__fade_in {
     position: relative;  
@@ -63,3 +33,4 @@
     margin-bottom: 9rem;
   }
 }
+  
