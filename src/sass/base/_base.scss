@@ -27,3 +27,6 @@ body{
 .text{
     @include text;
 }
+.subtitle{
+    @include subTitle;
+}

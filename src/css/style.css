@@ -4,6 +4,18 @@
   100% {
     transform: translateX(0%) skew(0deg); } }
 
+@keyframes fade_in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade_out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 *,
 *::afer,
 *::before {
@@ -35,11 +47,18 @@ body {
   margin-bottom: 4rem;
   letter-spacing: .2rem; }
 
+.subtitle {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: .3rem; }
+
 .experience__description {
   width: 66rem; }
   .experience__description a {
     display: inline-block;
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
     text-decoration: none;
     font-weight: 600;
     color: #333; }
@@ -112,8 +131,73 @@ body {
     border-radius: 9.5rem;
     width: 25rem; }
 
+.projects__card {
+  height: 17rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  .projects__card div {
+    margin-bottom: 2rem; }
+
+.projects__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 4rem; }
+  .projects__cards_item {
+    position: relative; }
+    .projects__cards_item-rotate {
+      transition: transform 1s ease;
+      perspective: 150rem;
+      -moz-perspective: 150rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      backface-visibility: hidden;
+      height: 17rem; }
+    .projects__cards_item:hover .projects__cards_item-front {
+      transform: rotateY(180deg); }
+    .projects__cards_item:hover .projects__cards_item-back {
+      transform: rotateY(0); }
+    .projects__cards_item-back {
+      transform: rotateY(180deg);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .projects__cards_item-back a {
+        color: #f6f7f8;
+        display: inline-block;
+        text-decoration: none; }
+
+.projects__tecnologiesUsed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects__tecnologiesUsed span img {
+    width: 4rem; }
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(-200%) skew(20deg); }
+  100% {
+    transform: translateX(0%) skew(0deg); } }
+
+@keyframes fade_in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade_out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 .tecnologies {
   margin-bottom: 4rem; }
+  .tecnologies__cards {
+    opacity: 0; }
   .tecnologies__card {
     height: 28rem;
     position: relative;
@@ -126,6 +210,12 @@ body {
       text-align: center;
       letter-spacing: .3rem;
       display: block; }
+  .tecnologies__fade_in {
+    position: relative;
+    animation: fade_in 1s ease forwards; }
+  .tecnologies__fade_out {
+    position: relative;
+    animation: fade_out 1s ease forwards; }
   .tecnologies__cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

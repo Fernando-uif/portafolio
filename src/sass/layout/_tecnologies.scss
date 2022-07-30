@@ -1,12 +1,16 @@
 @import "../abstract/variable";
 @import "../abstract/mixins";
+@import '../abstract/animations';
 
 .tecnologies {
   margin-bottom: 4rem;
+  &__cards{
+    opacity: 0;
+  }
   &__card {
     height: 28rem;
     position: relative;
-    padding: 1rem;
+    padding: 1rem; 
     text-align: center;
     & span {
       @include subTitle {   
@@ -14,9 +18,18 @@
       }
     }
   }
+  &__fade_in{    
+    position:relative;
+    animation: fade_in 1s ease forwards;
+  }
+  &__fade_out{
+    position:relative;
+    animation: fade_out 1s ease forwards;
+  }
   &__cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1rem;    
   }
 }
+      

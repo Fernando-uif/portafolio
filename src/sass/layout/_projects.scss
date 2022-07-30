@@ -1,0 +1,58 @@
+@import "../abstract/variable";
+.projects {
+  &__card {
+    height: 17rem;
+    box-shadow: $box-shadow;
+
+    & div {
+      margin-bottom: 2rem;
+    }
+  }
+  // TODO Hacer bien las cards con hover
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 4rem;
+    &_item {
+      position: relative;
+      &-rotate {
+        transition: transform 1s ease;
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        height: 17rem;
+      }
+      &:hover &-front { 
+        transform: rotateY(180deg);
+      }
+      &:hover &-back {
+        transform: rotateY(0);
+      }
+      &-back {
+        transform: rotateY(180deg);
+        box-shadow: $box-shadow;
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        & a{
+            color:$color-blanco;   
+            display:inline-block;  
+            text-decoration: none;
+        }
+      }
+    }
+  }
+  &__tecnologiesUsed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    & span img { 
+      width: 4rem;
+    }
+  }
+}
