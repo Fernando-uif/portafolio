@@ -51,8 +51,47 @@
 
       & + span {
         display: inline-block;
-        position: relative; 
+        position: relative;
         top: -10px;
+      }
+    }
+    &-linkedin + div {
+      text-align: center;
+      margin-top: 4rem;
+    }
+    &-button {
+      cursor: pointer;
+      border: 2px solid $color-terciario;
+      background: none;
+      color: black;
+      padding: 2rem 4rem;
+      font-size: 1.8rem;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      border-radius: 1rem; 
+      & > a {
+          transition: color 0.5s ease;
+        text-decoration: none;
+        color: black;
+      }
+      &:hover > a {
+        color: $color-blanco;
+      }
+      &::before {   
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: $color-terciario;
+        z-index: -1;
+        border-radius: 0 0 50% 50%;
+        height: 0%;
+        transition: all 0.5s ease;
+      }
+      &:hover::before {
+        height: 190%;
       }
     }
   }

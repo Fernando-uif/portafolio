@@ -273,6 +273,39 @@ body {
         display: inline-block;
         position: relative;
         top: -10px; }
+    .contact__info-linkedin + div {
+      text-align: center;
+      margin-top: 4rem; }
+    .contact__info-button {
+      cursor: pointer;
+      border: 2px solid #107bac;
+      background: none;
+      color: black;
+      padding: 2rem 4rem;
+      font-size: 1.8rem;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      border-radius: 1rem; }
+      .contact__info-button > a {
+        transition: color 0.5s ease;
+        text-decoration: none;
+        color: black; }
+      .contact__info-button:hover > a {
+        color: #f6f7f8; }
+      .contact__info-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #107bac;
+        z-index: -1;
+        border-radius: 0 0 50% 50%;
+        height: 0%;
+        transition: all 0.5s ease; }
+      .contact__info-button:hover::before {
+        height: 190%; }
   .contact__img {
     transition: transform 0.3s linear;
     cursor: pointer; }
