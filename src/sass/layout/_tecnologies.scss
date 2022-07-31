@@ -3,13 +3,13 @@
 @import "../abstract/animations";
 
 .tecnologies {
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
   &__card {
     opacity: 0;
     height: 28rem;
     position: relative;
     padding: 1rem;
-    text-align: center;
+    text-align: center; 
     position: relative;
     & span {
       @include subTitle {

@@ -97,7 +97,7 @@ body {
   background-position: center;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  margin-bottom: 2rem; }
+  margin-bottom: 10rem; }
   .header__container-title {
     position: absolute;
     left: calc(100vw / 2 - 35rem);
@@ -129,7 +129,7 @@ body {
   text-align: center;
   width: 100%;
   height: 60vh;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
   padding-bottom: 2rem; }
   .aboutme__container-info {
     text-align: justify;
@@ -146,49 +146,49 @@ body {
     border-radius: 9.5rem;
     width: 25rem; }
 
-.projects__card {
-  height: 17rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
-  .projects__card div {
-    margin-bottom: 2rem; }
-  .projects__card-back {
-    transform: rotateY(180deg);
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .projects__card-back a {
-      text-decoration: none;
-      color: #f6f7f8; }
-
-.projects__cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin-bottom: 4rem;
-  height: 40rem; }
-  .projects__cards__container {
-    perspective: 150rem;
-    position: relative; }
-    .projects__cards__container-card {
-      height: 17rem;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      backface-visibility: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      transition: transform 1s ease; }
-    .projects__cards__container:hover .projects__cards__container-card-front {
-      transform: rotateY(180deg); }
-    .projects__cards__container:hover .projects__cards__container-card-back {
-      transform: rotateY(360deg); }
-
-.projects__tecnologiesUsed {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); }
-  .projects__tecnologiesUsed span img {
-    width: 4rem; }
+.projects {
+  margin-bottom: 10rem; }
+  .projects__card {
+    height: 17rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .projects__card div {
+      margin-bottom: 2rem; }
+    .projects__card-back {
+      transform: rotateY(180deg);
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .projects__card-back a {
+        text-decoration: none;
+        color: #f6f7f8; }
+  .projects__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 4rem;
+    height: 40rem; }
+    .projects__cards__container {
+      perspective: 150rem;
+      position: relative; }
+      .projects__cards__container-card {
+        height: 17rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: transform 1s ease; }
+      .projects__cards__container:hover .projects__cards__container-card-front {
+        transform: rotateY(180deg); }
+      .projects__cards__container:hover .projects__cards__container-card-back {
+        transform: rotateY(360deg); }
+  .projects__tecnologiesUsed {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
+    .projects__tecnologiesUsed span img {
+      width: 4rem; }
 
 @keyframes deslizar {
   0% {
@@ -209,7 +209,7 @@ body {
     opacity: 0; } }
 
 .tecnologies {
-  margin-bottom: 4rem; }
+  margin-bottom: 10rem; }
   .tecnologies__card {
     opacity: 0;
     height: 28rem;
