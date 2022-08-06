@@ -57,5 +57,8 @@
     @media screen and (max-width: $screen-xsm) {
       grid-template-columns: repeat(3, 1fr);
     }
+    @media screen and (max-width: $screen-xxxsm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
