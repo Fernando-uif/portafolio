@@ -29,6 +29,9 @@
       &:hover {
         transform: scale(1.1);
       }
+       @media screen and (max-width:$screen-sm) {
+          width: unset;
+      }
     }
     &-photo img {
       border-radius: 9.5rem;

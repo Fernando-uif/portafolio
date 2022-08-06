@@ -17,6 +17,12 @@
       @include subTitle {
         display: block;
       }
+      @media screen and (max-width: $screen-md) {
+        font-size: $font-size-cellphone-md;
+      }
+      @media screen and (max-width: $screen-xsm) {
+        padding: unset;
+      }
     }
     &-img {
       width: 15rem;
@@ -24,6 +30,12 @@
       @media screen and (max-width: $screen-lg) {
         width: 11rem;
       }
+      @media screen and (max-width: $screen-sm) {
+        width: 5rem;
+      }
+    }
+    @media screen and (max-width: $screen-sm) {
+      height: 14rem;
     }
   }
   &__fade_in {
@@ -39,5 +51,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-bottom: 9rem;
+    @media screen and (max-width: $screen-sm) {
+      gap: unset;
+    }
   }
 }

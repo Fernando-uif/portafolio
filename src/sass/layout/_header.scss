@@ -1,3 +1,6 @@
+@import "../abstract/variable";
+@import "../abstract/breakpoints";
+
 .header {
   background-image: linear-gradient(
       to right bottom,
@@ -19,6 +22,9 @@
     text-align: center;
     transform: translateX(-200%);
     animation: deslizar 2s ease 0.6s forwards;
+    @media screen and (max-width: $screen-sm) {
+      left: calc(100vw / 2 - 35rem);
+    }
   }
   &__greeting {
     font-size: $font-size-3;
@@ -29,16 +35,21 @@
   }
   &__greeting-1 {
     letter-spacing: 1.5rem;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
+    padding-bottom: 0.1rem;
+   
+  }
+  &__greeting-2 {
+    letter-spacing: 1.2rem;
+    margin-bottom: 2rem;
     padding-bottom: 0.1rem;
   }
-  &__greeting-2 {  
-    letter-spacing: 1.2rem;  
-    margin-bottom: 2rem; 
-    padding-bottom: 0.1rem;    
-  }
-  &__rol{
+  &__rol {
     letter-spacing: 1.2rem;
   }
+  &__greeting-1, &__greeting-2, &__rol {
+    @media screen and (max-width: $screen-xsm) {
+      font-size: $font-size-cellphone-lg;
+    }
+  }
 }
-      
