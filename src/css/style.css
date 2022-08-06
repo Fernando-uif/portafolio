@@ -86,6 +86,10 @@ body {
   .experience__container {
     display: flex;
     justify-content: space-around; }
+    @media screen and (max-width: 1200px) {
+      .experience__container {
+        flex-direction: column-reverse;
+        align-items: center; } }
   .experience__image img {
     width: 70rem; }
 
@@ -131,13 +135,17 @@ body {
   height: 60vh;
   margin-bottom: 10rem;
   padding-bottom: 2rem; }
+  @media screen and (max-width: 992px) {
+    .aboutme__container {
+      flex-direction: column-reverse;
+      height: unset; } }
   .aboutme__container-info {
     text-align: justify;
     font-size: 2rem;
     padding: 3rem;
     width: 60rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: transform .3s linear; }
+    transition: transform 0.3s linear; }
     .aboutme__container-info span {
       font-weight: 600; }
     .aboutme__container-info:hover {
@@ -145,6 +153,10 @@ body {
   .aboutme__container-photo img {
     border-radius: 9.5rem;
     width: 25rem; }
+    @media screen and (max-width: 992px) {
+      .aboutme__container-photo img {
+        width: 20rem;
+        margin-bottom: 4rem; } }
 
 .projects {
   margin-bottom: 10rem; }
@@ -168,6 +180,10 @@ body {
     gap: 1rem;
     margin-bottom: 4rem;
     height: 40rem; }
+    @media screen and (max-width: 992px) {
+      .projects__cards {
+        grid-template-columns: repeat(2, 1fr);
+        height: 80rem; } }
     .projects__cards__container {
       perspective: 150rem;
       position: relative; }
@@ -212,6 +228,7 @@ body {
   margin-bottom: 10rem; }
   .tecnologies__card {
     opacity: 0;
+    width: auto;
     height: 28rem;
     position: relative;
     padding: 1rem;
@@ -224,6 +241,11 @@ body {
       text-align: center;
       letter-spacing: .3rem;
       display: block; }
+    .tecnologies__card-img {
+      width: 15rem; }
+      @media screen and (max-width: 1200px) {
+        .tecnologies__card-img {
+          width: 11rem; } }
   .tecnologies__fade_in {
     position: relative;
     animation: fade_in 1s ease forwards; }
@@ -239,7 +261,7 @@ body {
 .contact {
   margin-top: 4rem;
   background-image: linear-gradient(to right bottom, rgba(41, 41, 128, 0.8), rgba(25, 102, 161, 0.8));
-  height: 90vh;
+  height: 70rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -261,9 +283,15 @@ body {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
+      @media screen and (max-width: 992px) {
+        .contact__card-center {
+          width: 50rem; } }
   .contact__info {
     width: 50%;
     text-align: left; }
+    @media screen and (max-width: 992px) {
+      .contact__info {
+        font-size: 1.6rem; } }
     .contact__info-img {
       text-decoration: none; }
       .contact__info-img > img {

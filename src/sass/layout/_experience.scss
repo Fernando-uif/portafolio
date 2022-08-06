@@ -1,4 +1,6 @@
 @import "../abstract/variable";
+@import "../abstract/breakpoints";
+
 .experience {
   margin-bottom: 10rem;
   &__description {
@@ -19,9 +21,12 @@
   &__container {
     display: flex;
     justify-content: space-around;
+    @media screen and (max-width: $screen-lg) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
   &__image img {
     width: 70rem;
   }
-} 
-  
+}

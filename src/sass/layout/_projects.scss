@@ -1,4 +1,6 @@
 @import "../abstract/variable";
+@import "../abstract/breakpoints";
+
 .projects {
   margin-bottom: 10rem;
   &__card {
@@ -16,7 +18,7 @@
       align-items: center;
       & a {
         text-decoration: none;
-        color:$color-blanco;
+        color: $color-blanco;
       }
     }
   }
@@ -26,6 +28,10 @@
     gap: 1rem;
     margin-bottom: 4rem;
     height: 40rem;
+    @media screen and (max-width: $screen-md) {
+      grid-template-columns: repeat(2, 1fr);
+      height: 80rem;
+    }
     &__container {
       perspective: 150rem;
       position: relative;
@@ -45,7 +51,7 @@
       &:hover &-card-back {
         transform: rotateY(360deg);
       }
-    } 
+    }
   }
   &__tecnologiesUsed {
     display: grid;

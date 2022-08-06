@@ -1,7 +1,8 @@
-@import '../abstract/mixins';
-@import '../abstract/variable';
-.aboutme {
+@import "../abstract/mixins";
+@import "../abstract/variable";
+@import "../abstract/breakpoints";
 
+.aboutme {
   &__container {
     display: flex;
     justify-content: space-around;
@@ -11,25 +12,32 @@
     height: 60vh;
     margin-bottom: 10rem;
     padding-bottom: 2rem;
+    @media screen and (max-width: $screen-md) {
+      flex-direction: column-reverse;
+      height: unset;   
+    }
     &-info {
       text-align: justify;
-      font-size: 2rem;
+      font-size: 2rem; 
       padding: 3rem;
       width: 60rem;
       box-shadow: $box-shadow;
-      transition:transform .3s linear;
-      & span{
+      transition: transform 0.3s linear;
+      & span {
         font-weight: 600;
       }
-      &:hover{   
-        transform:scale(1.1);          
+      &:hover {
+        transform: scale(1.1);
       }
-    }      
-    &-photo img {     
-        border-radius: 9.5rem;   
+    }
+    &-photo img {
+      border-radius: 9.5rem;
       width: 25rem;
-    } 
-  }    
-    
-}  
+      @media screen and (max-width: $screen-md) {
+        width: 20rem;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
      
