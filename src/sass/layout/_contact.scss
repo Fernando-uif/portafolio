@@ -6,6 +6,9 @@
     padding-top: 10rem;
     color: $color-blanco;
     margin-bottom: 5rem;
+    @media screen and (max-width: $screen-xxsm) {
+      font-size: $font-size-cellphone-xxl;
+    }
   }
   background-image: linear-gradient(
     to right bottom,
@@ -45,8 +48,8 @@
   &__info {
     width: 50%;
     text-align: left;
-    @media screen and (max-width: $screen-md) {
-      font-size: $font-size-1;
+    @media screen and (max-width: $screen-xxsm) {
+      font-size: $font-size-cellphone-xxl;
     }
     &-img {
       text-decoration: none;
@@ -60,6 +63,9 @@
         display: inline-block;
         position: relative;
         top: -10px;
+        @media screen and (max-width: $screen-xxsm) {
+          font-size: $font-size-cellphone-md;
+        }
       }
     }
     &-linkedin + div {
@@ -77,6 +83,9 @@
       overflow: hidden;
       z-index: 1;
       border-radius: 1rem;
+      @media screen and (max-width: $screen-xxsm) {
+        font-size: $font-size-cellphone-md;
+      }
       & > a {
         transition: color 0.5s ease;
         text-decoration: none;

@@ -3,6 +3,11 @@
 @import "../abstract/breakpoints";
 
 .aboutme {
+  &__title {
+    @media screen and (max-width: $screen-xxsm) {
+      font-size: $font-size-cellphone-xxl;
+    }
+  }
   &__container {
     display: flex;
     justify-content: space-around;
@@ -14,11 +19,12 @@
     padding-bottom: 2rem;
     @media screen and (max-width: $screen-md) {
       flex-direction: column-reverse;
-      height: unset;   
+      height: unset;
     }
+
     &-info {
       text-align: justify;
-      font-size: 2rem; 
+      font-size: 2rem;
       padding: 3rem;
       width: 60rem;
       box-shadow: $box-shadow;
@@ -29,8 +35,11 @@
       &:hover {
         transform: scale(1.1);
       }
-       @media screen and (max-width:$screen-sm) {
-          width: unset;
+      @media screen and (max-width: $screen-sm) {
+        width: unset;
+      }
+      @media screen and (max-width: $screen-xxsm) {
+        font-size: $font-size-cellphone-md;
       }
     }
     &-photo img {
@@ -43,4 +52,3 @@
     }
   }
 }
-     

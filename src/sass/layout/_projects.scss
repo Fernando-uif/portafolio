@@ -3,12 +3,20 @@
 
 .projects {
   margin-bottom: 10rem;
+  &__title {
+    @media screen and (max-width: $screen-xxsm) {
+      font-size: $font-size-cellphone-xxl;
+    }
+  }
   &__card {
     height: 17rem;
     box-shadow: $box-shadow;
 
     & div {
       margin-bottom: 2rem;
+      @media screen and (max-width: $screen-xxsm) {
+        font-size: $font-size-cellphone-md;
+      }
     }
     &-back {
       transform: rotateY(180deg);

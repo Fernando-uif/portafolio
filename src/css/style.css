@@ -71,6 +71,9 @@ body {
 
 .experience {
   margin-bottom: 10rem; }
+  @media screen and (max-width: 435px) {
+    .experience__title {
+      font-size: 2.8rem; } }
   .experience__description {
     width: 66rem; }
     .experience__description a {
@@ -87,6 +90,9 @@ body {
       .experience__description {
         width: unset;
         padding: 2rem; } }
+    @media screen and (max-width: 435px) {
+      .experience__description {
+        font-size: 1.4rem; } }
   .experience__container {
     display: flex;
     justify-content: space-around; }
@@ -148,6 +154,10 @@ body {
     .header__greeting-1, .header__greeting-2, .header__rol {
       font-size: 1.4rem; } }
 
+@media screen and (max-width: 435px) {
+  .aboutme__title {
+    font-size: 2.8rem; } }
+
 .aboutme__container {
   display: flex;
   justify-content: space-around;
@@ -175,6 +185,9 @@ body {
     @media screen and (max-width: 768px) {
       .aboutme__container-info {
         width: unset; } }
+    @media screen and (max-width: 435px) {
+      .aboutme__container-info {
+        font-size: 1.4rem; } }
   .aboutme__container-photo img {
     border-radius: 9.5rem;
     width: 25rem; }
@@ -185,11 +198,17 @@ body {
 
 .projects {
   margin-bottom: 10rem; }
+  @media screen and (max-width: 435px) {
+    .projects__title {
+      font-size: 2.8rem; } }
   .projects__card {
     height: 17rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
     .projects__card div {
       margin-bottom: 2rem; }
+      @media screen and (max-width: 435px) {
+        .projects__card div {
+          font-size: 1.4rem; } }
     .projects__card-back {
       transform: rotateY(180deg);
       background-color: #333;
@@ -251,6 +270,9 @@ body {
 
 .tecnologies {
   margin-bottom: 10rem; }
+  @media screen and (max-width: 435px) {
+    .tecnologies__title {
+      font-size: 2.8rem; } }
   .tecnologies__card {
     opacity: 0;
     width: auto;
@@ -317,6 +339,9 @@ body {
     padding-top: 10rem;
     color: #f6f7f8;
     margin-bottom: 5rem; }
+    @media screen and (max-width: 435px) {
+      .contact__title {
+        font-size: 2.8rem; } }
   .contact__card {
     display: flex;
     justify-content: center;
@@ -335,9 +360,9 @@ body {
   .contact__info {
     width: 50%;
     text-align: left; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 435px) {
       .contact__info {
-        font-size: 1.6rem; } }
+        font-size: 2.8rem; } }
     .contact__info-img {
       text-decoration: none; }
       .contact__info-img > img {
@@ -347,6 +372,9 @@ body {
         display: inline-block;
         position: relative;
         top: -10px; }
+        @media screen and (max-width: 435px) {
+          .contact__info-img + span {
+            font-size: 1.4rem; } }
     .contact__info-linkedin + div {
       text-align: center;
       margin-top: 4rem; }
@@ -361,6 +389,9 @@ body {
       overflow: hidden;
       z-index: 1;
       border-radius: 1rem; }
+      @media screen and (max-width: 435px) {
+        .contact__info-button {
+          font-size: 1.4rem; } }
       .contact__info-button > a {
         transition: color 0.5s ease;
         text-decoration: none;
