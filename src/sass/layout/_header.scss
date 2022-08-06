@@ -23,7 +23,13 @@
     transform: translateX(-200%);
     animation: deslizar 2s ease 0.6s forwards;
     @media screen and (max-width: $screen-sm) {
-      left: calc(100vw / 2 - 35rem);
+      left: calc(100vw / 2 - 28rem);
+    }
+    @media screen and (max-width: $screen-xsm) {
+      left: calc(100vw / 2 - 22rem);
+    }
+    @media screen and (max-width: $screen-xxsm) {
+      left: calc(100vw / 2 - 17rem);
     }
   }
   &__greeting {
@@ -37,7 +43,6 @@
     letter-spacing: 1.5rem;
     margin-bottom: 2rem;
     padding-bottom: 0.1rem;
-   
   }
   &__greeting-2 {
     letter-spacing: 1.2rem;
@@ -47,9 +52,14 @@
   &__rol {
     letter-spacing: 1.2rem;
   }
-  &__greeting-1, &__greeting-2, &__rol {
-    @media screen and (max-width: $screen-xsm) {
+  &__greeting-1,
+  &__greeting-2,
+  &__rol {
+    @media screen and (max-width: $screen-sm) {
       font-size: $font-size-cellphone-lg;
+    }
+    @media screen and (max-width: $screen-xsm) {
+      font-size: $font-size-cellphone-md;
     }
   }
 }

@@ -118,7 +118,13 @@ body {
     animation: deslizar 2s ease 0.6s forwards; }
     @media screen and (max-width: 768px) {
       .header__container-title {
-        left: calc(100vw / 2 - 35rem); } }
+        left: calc(100vw / 2 - 28rem); } }
+    @media screen and (max-width: 500px) {
+      .header__container-title {
+        left: calc(100vw / 2 - 22rem); } }
+    @media screen and (max-width: 435px) {
+      .header__container-title {
+        left: calc(100vw / 2 - 17rem); } }
   .header__greeting {
     font-size: 3rem;
     color: #f6f7f8;
@@ -135,9 +141,12 @@ body {
     padding-bottom: 0.1rem; }
   .header__rol {
     letter-spacing: 1.2rem; }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 768px) {
     .header__greeting-1, .header__greeting-2, .header__rol {
       font-size: 1.8rem; } }
+  @media screen and (max-width: 500px) {
+    .header__greeting-1, .header__greeting-2, .header__rol {
+      font-size: 1.4rem; } }
 
 .aboutme__container {
   display: flex;
@@ -260,7 +269,7 @@ body {
       @media screen and (max-width: 992px) {
         .tecnologies__card span {
           font-size: 1.4rem; } }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 500px) {
         .tecnologies__card span {
           padding: unset; } }
     .tecnologies__card-img {
@@ -288,6 +297,9 @@ body {
     @media screen and (max-width: 768px) {
       .tecnologies__cards {
         gap: unset; } }
+    @media screen and (max-width: 500px) {
+      .tecnologies__cards {
+        grid-template-columns: repeat(3, 1fr); } }
 
 .contact {
   margin-top: 4rem;
