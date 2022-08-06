@@ -15,6 +15,9 @@
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   margin-bottom: 10rem;
+  @media screen and (max-width: $screen-xxsm) {
+    height: 50vh;
+  }
   &__container-title {
     position: absolute;
     left: calc(100vw / 2 - 35rem);

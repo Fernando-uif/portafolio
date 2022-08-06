@@ -25,11 +25,12 @@
 
 html {
   font-size: 10px;
-  min-height: 100vh; }
+  min-height: 100vh;
+  scroll-behavior: smooth; }
 
 body {
   background-color: #fff;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 1rem; }
@@ -63,7 +64,7 @@ body {
 .line {
   text-align: center; }
   .line div {
-    height: .1rem;
+    height: 0.1rem;
     background-color: #4a85b2;
     width: 50%;
     display: inline-block;
@@ -115,6 +116,9 @@ body {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   margin-bottom: 10rem; }
+  @media screen and (max-width: 435px) {
+    .header {
+      height: 50vh; } }
   .header__container-title {
     position: absolute;
     left: calc(100vw / 2 - 35rem);
@@ -247,8 +251,14 @@ body {
   .projects__tecnologiesUsed {
     display: grid;
     grid-template-columns: repeat(5, 1fr); }
+    @media screen and (max-width: 435px) {
+      .projects__tecnologiesUsed {
+        grid-template-columns: repeat(2, 1fr); } }
     .projects__tecnologiesUsed span img {
       width: 4rem; }
+      @media screen and (max-width: 435px) {
+        .projects__tecnologiesUsed span img {
+          width: 2.5rem; } }
 
 @keyframes deslizar {
   0% {

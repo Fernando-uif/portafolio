@@ -64,8 +64,14 @@
   &__tecnologiesUsed {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    @media screen and (max-width: $screen-xxsm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     & span img {
       width: 4rem;
+      @media screen and (max-width: $screen-xxsm) {
+        width: 2.5rem;
+      }
     }
   }
 }

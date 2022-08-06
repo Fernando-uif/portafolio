@@ -1,45 +1,46 @@
-
-@import '../abstract/variable';
-@import '../abstract/mixins';
+@import "../abstract/variable";
+@import "../abstract/mixins";
 *,
 *::afer,
-*::before{  
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size:10px;
-    min-height:100vh;
-}
-
-body{
-    background-color:#fff;
-    font-family: 'Raleway', sans-serif;    box-sizing:border-box;
-    margin:0;
-    padding:1rem;
+html {
+  font-size: 10px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
-.title{
-    @include title;
+body {
+  background-color: #fff;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1rem;
 }
 
-.subtitle{
-    @include subTitle;
+.title {
+  @include title;
 }
-.text{
-    @include text;
+
+.subtitle {
+  @include subTitle;
 }
-.details{
-    @include details;
+.text {
+  @include text;
 }
-.line{
-    text-align:center;
-    & div{
-        height: .1rem;
-        background-color: rgb(74, 133, 178);
-        width: 50%;
-        display: inline-block;
-        margin-bottom: 2rem;
-    }
+.details {
+  @include details;
+}
+.line {
+  text-align: center;
+  & div {
+    height: 0.1rem;
+    background-color: rgb(74, 133, 178);
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
 }
