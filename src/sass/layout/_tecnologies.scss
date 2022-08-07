@@ -37,6 +37,9 @@
       }
       @media screen and (max-width: $screen-sm) {
         width: 5rem;
+        &--clickup {
+          width: 5.5rem;
+        }
       }
     }
     @media screen and (max-width: $screen-sm) {
