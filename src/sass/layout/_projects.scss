@@ -24,6 +24,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media screen and (max-width: $screen-xxsm) {
+        font-size: $font-size-cellphone-md;
+      }
       & a {
         text-decoration: none;
         color: $color-blanco;
