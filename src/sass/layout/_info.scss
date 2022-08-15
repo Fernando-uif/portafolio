@@ -36,7 +36,7 @@
         transform: scale(1.1);
       }
       @media screen and (max-width: $screen-sm) {
-        width: unset;
+        width: 70vw;
       }
       @media screen and (max-width: $screen-xxsm) {
         font-size: $font-size-cellphone-md;
@@ -52,3 +52,4 @@
     }
   }
 }
+  
