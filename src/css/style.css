@@ -379,7 +379,10 @@ body {
         .contact__card-center {
           background-size: contain;
           background-image: linear-gradient(360deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url("../assets/info.jpg");
-          width: 35rem; } }
+          width: 25rem; } }
+      @media screen and (max-width: 365px) {
+        .contact__card-center {
+          width: 20rem; } }
   .contact__info {
     width: 50%;
     text-align: left; }
@@ -411,15 +414,14 @@ body {
       position: relative;
       overflow: hidden;
       z-index: 1;
-      border-radius: 1rem; }
+      border-radius: 1rem;
+      display: inline-block;
+      text-decoration: none;
+      transition: color 0.5s ease; }
       @media screen and (max-width: 435px) {
         .contact__info-button {
           font-size: 1.4rem; } }
-      .contact__info-button > a {
-        transition: color 0.5s ease;
-        text-decoration: none;
-        color: black; }
-      .contact__info-button:hover > a {
+      .contact__info-button:hover {
         color: #f6f7f8; }
       .contact__info-button::before {
         content: "";
