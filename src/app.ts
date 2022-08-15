@@ -133,11 +133,3 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-
-
-// document.querySelector('#downloadButton');
-// document.querySelector('#downloadButton')?.addEventListener('click',()=>{
-//   console.log('click');
-//   document.querySelector('#downloadAnchor')?.click();
-// }
-// )
