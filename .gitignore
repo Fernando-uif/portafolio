@@ -1,4 +1,4 @@
 node_modules
-css/style.comp.css
-css/style.css
-css/prefix.css
+src/css/style.comp.css
+src/css/style.css
+src/css/prefix.css

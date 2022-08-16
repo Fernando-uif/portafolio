@@ -7,10 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
-    "compile:sass":"node-sass src/sass/main.scss src/css/style.comp.css",
-    "prefix:css":"postcss src/css/style.comp.css --use autoprefixer -o src/css/style.prefix.css",
-    "compress:css":"node-sass src/css/style.prefix.css src/css/style.min.css --output-style compressed",
-    "build:css":"npm-run-all compile:sass prefix:css compress:css"
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
+    "prefix:css": "postcss src/css/style.comp.css --use autoprefixer -o src/css/style.prefix.css",
+    "compress:css": "node-sass src/css/style.prefix.css src/css/style.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "minify:js": "browserify src/app.js > src/app.min.js --plugin tinyify"
   },
   "repository": {
     "type": "git",
@@ -24,11 +25,14 @@
   },
   "homepage": "https://github.com/Fernando-ui/Portafolio#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.10",
     "autoprefixer": "^10.4.8",
+    "babelify": "^10.0.0",
     "concat": "^1.0.3",
     "node-sass": "^7.0.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.16",
-    "postcss-cli": "^10.0.0"
+    "postcss-cli": "^10.0.0",
+    "tinyify": "^3.1.0"
   }
 }
