@@ -40,7 +40,7 @@
     margin-bottom: 4rem;
     @media screen and (max-width: $screen-md) {
       grid-template-columns: repeat(2, 1fr);
-      height: 80rem;
+
     }
     &__container {
       height:18rem;
@@ -57,7 +57,7 @@
         transition: transform 1s ease;
       }
       &:hover &-card-front {
-        transform: rotateY(180deg);
+        transform: rotateY(180deg);  
       }
       &:hover &-card-back {
         transform: rotateY(360deg);
@@ -72,9 +72,13 @@
     }
     & span img {
       width: 4rem; 
+      @media screen and (max-width: $screen-xsm) {
+        width: 3rem;
+      }
       @media screen and (max-width: $screen-xxsm) {
         width: 2.5rem;
       }
     }
   }
 }
+ 
