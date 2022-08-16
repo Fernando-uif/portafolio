@@ -232,13 +232,13 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    margin-bottom: 4rem;
-    height: 40rem; }
+    margin-bottom: 4rem; }
     @media screen and (max-width: 992px) {
       .projects__cards {
         grid-template-columns: repeat(2, 1fr);
         height: 80rem; } }
     .projects__cards__container {
+      height: 18rem;
       perspective: 150rem;
       position: relative; }
       .projects__cards__container-card {
@@ -254,16 +254,16 @@ body {
         transform: rotateY(180deg); }
       .projects__cards__container:hover .projects__cards__container-card-back {
         transform: rotateY(360deg); }
-  .projects__tecnologiesUsed {
+  .projects__technologiesUsed {
     display: grid;
     grid-template-columns: repeat(5, 1fr); }
     @media screen and (max-width: 435px) {
-      .projects__tecnologiesUsed {
+      .projects__technologiesUsed {
         grid-template-columns: repeat(2, 1fr); } }
-    .projects__tecnologiesUsed span img {
+    .projects__technologiesUsed span img {
       width: 4rem; }
       @media screen and (max-width: 435px) {
-        .projects__tecnologiesUsed span img {
+        .projects__technologiesUsed span img {
           width: 2.5rem; } }
 
 @keyframes deslizar {
@@ -284,12 +284,12 @@ body {
   100% {
     opacity: 0; } }
 
-.tecnologies {
+.technologies {
   margin-bottom: 10rem; }
   @media screen and (max-width: 435px) {
-    .tecnologies__title {
+    .technologies__title {
       font-size: 2.8rem; } }
-  .tecnologies__card {
+  .technologies__card {
     opacity: 0;
     width: auto;
     height: 28rem;
@@ -297,7 +297,7 @@ body {
     padding: 1rem;
     text-align: center;
     position: relative; }
-    .tecnologies__card span {
+    .technologies__card span {
       font-size: 2.4rem;
       text-transform: capitalize;
       margin-bottom: 2rem;
@@ -305,43 +305,43 @@ body {
       letter-spacing: .3rem;
       display: block; }
       @media screen and (max-width: 992px) {
-        .tecnologies__card span {
+        .technologies__card span {
           font-size: 1.4rem; } }
       @media screen and (max-width: 500px) {
-        .tecnologies__card span {
+        .technologies__card span {
           padding: unset; } }
-    .tecnologies__card-img {
+    .technologies__card-img {
       width: 15rem; }
       @media screen and (max-width: 1200px) {
-        .tecnologies__card-img {
+        .technologies__card-img {
           width: 11rem; } }
       @media screen and (max-width: 768px) {
-        .tecnologies__card-img {
+        .technologies__card-img {
           width: 5rem; }
-          .tecnologies__card-img--clickup {
+          .technologies__card-img--clickup {
             width: 5.5rem; } }
     @media screen and (max-width: 768px) {
-      .tecnologies__card {
+      .technologies__card {
         height: 14rem; } }
-  .tecnologies__fade_in {
+  .technologies__fade_in {
     position: relative;
     animation: fade_in 1s ease forwards; }
-  .tecnologies__fade_out {
+  .technologies__fade_out {
     position: relative;
     animation: fade_out 1s ease forwards; }
-  .tecnologies__cards {
+  .technologies__cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-bottom: 9rem; }
     @media screen and (max-width: 768px) {
-      .tecnologies__cards {
+      .technologies__cards {
         gap: unset; } }
     @media screen and (max-width: 500px) {
-      .tecnologies__cards {
+      .technologies__cards {
         grid-template-columns: repeat(3, 1fr); } }
     @media screen and (max-width: 365px) {
-      .tecnologies__cards {
+      .technologies__cards {
         grid-template-columns: repeat(2, 1fr); } }
 
 .contact {

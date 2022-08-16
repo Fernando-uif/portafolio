@@ -38,12 +38,12 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-bottom: 4rem;
-    height: 40rem;
     @media screen and (max-width: $screen-md) {
       grid-template-columns: repeat(2, 1fr);
       height: 80rem;
     }
     &__container {
+      height:18rem;
       perspective: 150rem;
       position: relative;
       &-card {
@@ -64,14 +64,14 @@
       }
     }
   }
-  &__tecnologiesUsed {
+  &__technologiesUsed {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     @media screen and (max-width: $screen-xxsm) {
       grid-template-columns: repeat(2, 1fr);
     }
     & span img {
-      width: 4rem;
+      width: 4rem; 
       @media screen and (max-width: $screen-xxsm) {
         width: 2.5rem;
       }

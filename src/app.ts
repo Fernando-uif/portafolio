@@ -1,7 +1,7 @@
 
 window.addEventListener("scroll", () => {
   const listNode: NodeList =
-    document.querySelectorAll(".tecnologies__card-1") ||
+    document.querySelectorAll(".technologies__card-1") ||
     document.createElement("div");
   const firstElement: HTMLElement = listNode[0] as HTMLElement;
   const position = firstElement.getBoundingClientRect().top;
@@ -10,18 +10,18 @@ window.addEventListener("scroll", () => {
   for (let i = 0; i < listNode.length; i++) {
     let element: HTMLElement = listNode[i] as HTMLElement;
     if (position < tamanioPantalla) {
-      element.classList.add("tecnologies__fade_in");
-      element.classList.remove("tecnologies__fade_out");
+      element.classList.add("technologies__fade_in");
+      element.classList.remove("technologies__fade_out");
     } else {
-      element.classList.remove("tecnologies__fade_in");
-      element.classList.add("tecnologies__fade_out");
+      element.classList.remove("technologies__fade_in");
+      element.classList.add("technologies__fade_out");
     } 
   }
 }); 
 
 window.addEventListener("scroll", () => {
   const listNode: NodeList =
-    document.querySelectorAll(".tecnologies__card-2") ||
+    document.querySelectorAll(".technologies__card-2") ||
     document.createElement("div");
   const firstElement: HTMLElement = listNode[0] as HTMLElement;
   const position = firstElement.getBoundingClientRect().top;
@@ -30,17 +30,17 @@ window.addEventListener("scroll", () => {
   for (let i = 0; i < listNode.length; i++) {
     let element: HTMLElement = listNode[i] as HTMLElement;
     if (position < tamanioPantalla) {
-      element.classList.add("tecnologies__fade_in");
-      element.classList.remove("tecnologies__fade_out");
+      element.classList.add("technologies__fade_in");
+      element.classList.remove("technologies__fade_out");
     } else {
-      element.classList.remove("tecnologies__fade_in");
-      element.classList.add("tecnologies__fade_out");
+      element.classList.remove("technologies__fade_in");
+      element.classList.add("technologies__fade_out");
     }
   }
 });
 window.addEventListener("scroll", () => {
   const listNode: NodeList =
-    document.querySelectorAll(".tecnologies__card-3") ||
+    document.querySelectorAll(".technologies__card-3") ||
     document.createElement("div");
   const firstElement: HTMLElement = listNode[0] as HTMLElement;
   const position = firstElement.getBoundingClientRect().top;
@@ -49,17 +49,17 @@ window.addEventListener("scroll", () => {
   for (let i = 0; i < listNode.length; i++) {
     let element: HTMLElement = listNode[i] as HTMLElement;
     if (position < tamanioPantalla) {
-      element.classList.add("tecnologies__fade_in");
-      element.classList.remove("tecnologies__fade_out");
+      element.classList.add("technologies__fade_in");
+      element.classList.remove("technologies__fade_out");
     } else {
-      element.classList.remove("tecnologies__fade_in");
-      element.classList.add("tecnologies__fade_out");
+      element.classList.remove("technologies__fade_in");
+      element.classList.add("technologies__fade_out");
     }
   }
 });
 window.addEventListener("scroll", () => {
   const listNode: NodeList =
-    document.querySelectorAll(".tecnologies__card-4") ||
+    document.querySelectorAll(".technologies__card-4") ||
     document.createElement("div");
   const firstElement: HTMLElement = listNode[0] as HTMLElement;
   const position = firstElement.getBoundingClientRect().top;
@@ -68,17 +68,17 @@ window.addEventListener("scroll", () => {
   for (let i = 0; i < listNode.length; i++) {
     let element: HTMLElement = listNode[i] as HTMLElement;
     if (position < tamanioPantalla) {
-      element.classList.add("tecnologies__fade_in");
-      element.classList.remove("tecnologies__fade_out");
+      element.classList.add("technologies__fade_in");
+      element.classList.remove("technologies__fade_out");
     } else {
-      element.classList.remove("tecnologies__fade_in");
-      element.classList.add("tecnologies__fade_out");
+      element.classList.remove("technologies__fade_in");
+      element.classList.add("technologies__fade_out");
     }
   }
 });
 window.addEventListener("scroll", () => {
   const listNode: NodeList =
-    document.querySelectorAll(".tecnologies__card-5") ||
+    document.querySelectorAll(".technologies__card-5") ||
     document.createElement("div");
   const firstElement: HTMLElement = listNode[0] as HTMLElement;
   const position = firstElement.getBoundingClientRect().top;
@@ -87,17 +87,17 @@ window.addEventListener("scroll", () => {
   for (let i = 0; i < listNode.length; i++) {
     let element: HTMLElement = listNode[i] as HTMLElement;
     if (position < tamanioPantalla) {
-      element.classList.add("tecnologies__fade_in");
-      element.classList.remove("tecnologies__fade_out");
+      element.classList.add("technologies__fade_in");
+      element.classList.remove("technologies__fade_out");
     } else {
-      element.classList.remove("tecnologies__fade_in");
-      element.classList.add("tecnologies__fade_out");
+      element.classList.remove("technologies__fade_in");
+      element.classList.add("technologies__fade_out");
     }
   }
 });
 window.addEventListener("scroll", () => {
   const listNode: NodeList =
-    document.querySelectorAll(".tecnologies__card-6") ||
+    document.querySelectorAll(".technologies__card-6") ||
     document.createElement("div");
   const firstElement: HTMLElement = listNode[0] as HTMLElement;
   const position = firstElement.getBoundingClientRect().top;
@@ -106,17 +106,17 @@ window.addEventListener("scroll", () => {
   for (let i = 0; i < listNode.length; i++) {
     let element: HTMLElement = listNode[i] as HTMLElement;
     if (position < tamanioPantalla) {
-      element.classList.add("tecnologies__fade_in");
-      element.classList.remove("tecnologies__fade_out");
+      element.classList.add("technologies__fade_in");
+      element.classList.remove("technologies__fade_out");
     } else {
-      element.classList.remove("tecnologies__fade_in");
-      element.classList.add("tecnologies__fade_out");
+      element.classList.remove("technologies__fade_in");
+      element.classList.add("technologies__fade_out");
     }
   }
 });
 window.addEventListener("scroll", () => {
   const listNode: NodeList =
-    document.querySelectorAll(".tecnologies__card-7") ||
+    document.querySelectorAll(".technologies__card-7") ||
     document.createElement("div");
   const firstElement: HTMLElement = listNode[0] as HTMLElement;
   const position = firstElement.getBoundingClientRect().top;
@@ -125,11 +125,11 @@ window.addEventListener("scroll", () => {
   for (let i = 0; i < listNode.length; i++) {
     let element: HTMLElement = listNode[i] as HTMLElement;
     if (position < tamanioPantalla) {
-      element.classList.add("tecnologies__fade_in");
-      element.classList.remove("tecnologies__fade_out");
+      element.classList.add("technologies__fade_in");
+      element.classList.remove("technologies__fade_out");
     } else {
-      element.classList.remove("tecnologies__fade_in");
-      element.classList.add("tecnologies__fade_out");
+      element.classList.remove("technologies__fade_in");
+      element.classList.add("technologies__fade_out");
     }
   }
 });

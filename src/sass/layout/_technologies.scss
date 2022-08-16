@@ -3,7 +3,7 @@
 @import "../abstract/animations";
 @import "../abstract/breakpoints";
 
-.tecnologies {
+.technologies {
   margin-bottom: 10rem;
   &__title {
     @media screen and (max-width: $screen-xxsm) {
@@ -34,7 +34,7 @@
 
       @media screen and (max-width: $screen-lg) {
         width: 11rem;
-      }
+      } 
       @media screen and (max-width: $screen-sm) {
         width: 5rem;
         &--clickup {
