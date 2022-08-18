@@ -25,3 +25,12 @@
         opacity:0;
     }
 }
+
+@keyframes scaleRotate{
+
+  to{
+    color: #1c74b7;
+    background-color: #FFDB70;
+    transform: rotate(5deg) scale(1.3);
+  }
+}  

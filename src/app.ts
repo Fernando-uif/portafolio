@@ -1,4 +1,3 @@
-
 window.addEventListener("scroll", () => {
   const listNode: NodeList =
     document.querySelectorAll(".technologies__card-1") ||
@@ -15,9 +14,9 @@ window.addEventListener("scroll", () => {
     } else {
       element.classList.remove("technologies__fade_in");
       element.classList.add("technologies__fade_out");
-    } 
+    }
   }
-}); 
+});
 
 window.addEventListener("scroll", () => {
   const listNode: NodeList =
@@ -133,3 +132,20 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+window.addEventListener("scroll", () => {
+  const spanAnimations: NodeList =
+    document.querySelectorAll(".spanAnimation") ||
+    document.createElement("div");
+  const firstElement: HTMLElement = spanAnimations[0] as HTMLElement;
+  const position = firstElement.getBoundingClientRect().top;
+  const tamanioPantalla = window.innerHeight / 2;
+  for (let i = 0; i < spanAnimations.length; i++) {
+    let element: HTMLElement = spanAnimations[i] as HTMLElement;
+    if (position < tamanioPantalla) {
+      element.classList.add("experience__spanAnimation");
+    } else {
+      element.classList.remove("experience__spanAnimation");
+    }
+  }
+});
+ 

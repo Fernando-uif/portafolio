@@ -1,5 +1,6 @@
 @import "../abstract/variable";
 @import "../abstract/breakpoints";
+@import '../abstract/animations';
 
 .experience {
   margin-bottom: 10rem;
@@ -48,4 +49,7 @@
       width: 100vw;
     }
   }
-}
+  &__spanAnimation{
+     animation: scaleRotate 1s ease-in-out alternate 2;   
+  }
+}   

@@ -125,3 +125,19 @@ window.addEventListener("scroll", function () {
         }
     }
 });
+window.addEventListener("scroll", function () {
+    var spanAnimations = document.querySelectorAll(".spanAnimation") ||
+        document.createElement("div");
+    var firstElement = spanAnimations[0];
+    var position = firstElement.getBoundingClientRect().top;
+    var tamanioPantalla = window.innerHeight / 2;
+    for (var i = 0; i < spanAnimations.length; i++) {
+        var element = spanAnimations[i];
+        if (position < tamanioPantalla) {
+            element.classList.add("experience__spanAnimation");
+        }
+        else {
+            element.classList.remove("experience__spanAnimation");
+        }
+    }
+});
