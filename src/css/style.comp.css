@@ -22,6 +22,16 @@
     background-color: #FFDB70;
     transform: rotate(5deg) scale(1.3); } }
 
+@keyframes vibrate {
+  25% {
+    transform: rotate(5deg); }
+  50% {
+    transform: rotate(0); }
+  75% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(0); } }
+
 *,
 *::afer,
 *::before {
@@ -99,6 +109,16 @@ body {
     color: #1c74b7;
     background-color: #FFDB70;
     transform: rotate(5deg) scale(1.3); } }
+
+@keyframes vibrate {
+  25% {
+    transform: rotate(5deg); }
+  50% {
+    transform: rotate(0); }
+  75% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(0); } }
 
 .experience {
   margin-bottom: 10rem; }
@@ -301,6 +321,8 @@ body {
       @media screen and (max-width: 435px) {
         .projects__technologiesUsed span img {
           width: 2.5rem; } }
+  .projects__vibrate {
+    animation: vibrate 0.3s ease 2; }
 
 @keyframes deslizar {
   0% {
@@ -325,6 +347,16 @@ body {
     color: #1c74b7;
     background-color: #FFDB70;
     transform: rotate(5deg) scale(1.3); } }
+
+@keyframes vibrate {
+  25% {
+    transform: rotate(5deg); }
+  50% {
+    transform: rotate(0); }
+  75% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(0); } }
 
 .technologies {
   margin-bottom: 10rem; }
