@@ -148,4 +148,33 @@ window.addEventListener("scroll", () => {
     }
   }
 });
- 
+window.addEventListener("scroll", () => {
+  const spanAnimations: NodeList =
+    document.querySelectorAll(".projects__cards__container") ||
+    document.createElement("div");
+  const firstElement: HTMLElement = spanAnimations[0] as HTMLElement;
+  const position = firstElement.getBoundingClientRect().top;
+  const widthOfWindow = window.innerWidth;
+  let randoNumber = +(Math.random() * 10).toFixed(0);
+
+  if (+widthOfWindow > 475) {
+    for (let i = 0; i < 2; i++) {
+      console.log(position);
+      let element: HTMLElement = spanAnimations[randoNumber] as HTMLElement;
+      if (+position <= 100 && +position >= 50) {
+        element.classList.add("projects__vibrate");
+      } else if (+position >= 700 || +position >= -200) {
+        element.classList.remove("projects__vibrate");
+      }
+    }
+  } else {
+    for (let i = 0; i < 2; i++) {
+      let element: HTMLElement = spanAnimations[randoNumber] as HTMLElement;
+      if (+position <= 100 && +position >= 50) {
+        element.classList.add("projects__vibrate");
+      } else if (+position >= -600) {
+        element.classList.remove("projects__vibrate");
+      }
+    }
+  }
+});

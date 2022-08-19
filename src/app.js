@@ -141,3 +141,34 @@ window.addEventListener("scroll", function () {
         }
     }
 });
+window.addEventListener("scroll", function () {
+    var spanAnimations = document.querySelectorAll(".projects__cards__container") ||
+        document.createElement("div");
+    var firstElement = spanAnimations[0];
+    var position = firstElement.getBoundingClientRect().top;
+    var widthOfWindow = window.innerWidth;
+    var randoNumber = +(Math.random() * 10).toFixed(0);
+    if (+widthOfWindow > 475) {
+        for (var i = 0; i < 2; i++) {
+            console.log(position);
+            var element = spanAnimations[randoNumber];
+            if (+position <= 100 && +position >= 50) {
+                element.classList.add("projects__vibrate");
+            }
+            else if (+position >= 700 || +position >= -200) {
+                element.classList.remove("projects__vibrate");
+            }
+        }
+    }
+    else {
+        for (var i = 0; i < 2; i++) {
+            var element = spanAnimations[randoNumber];
+            if (+position <= 100 && +position >= 50) {
+                element.classList.add("projects__vibrate");
+            }
+            else if (+position >= -600) {
+                element.classList.remove("projects__vibrate");
+            }
+        }
+    }
+});
