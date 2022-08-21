@@ -178,3 +178,29 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+window.addEventListener("scroll", () => {
+  let element: HTMLDivElement =
+    document.querySelector(".experience__title") ||
+    document.createElement("div");
+  let button: HTMLDivElement =
+    document.querySelector(".header__upButton") ||
+    document.createElement("div");
+  const heightOfWindow = window.innerHeight;
+  const position = element.getBoundingClientRect().top;
+  console.log({ position });
+  console.log({ heightOfWindow });
+  if (position < heightOfWindow) {
+    button.classList.add("header__upButton-active");
+  } else {
+    button.classList.remove("header__upButton-active");
+  }
+});
+
+let button: HTMLDivElement =
+  document.querySelector(".header__upButton") || document.createElement("div");
+button.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

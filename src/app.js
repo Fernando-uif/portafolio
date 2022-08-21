@@ -172,3 +172,26 @@ window.addEventListener("scroll", function () {
         }
     }
 });
+window.addEventListener("scroll", function () {
+    var element = document.querySelector(".experience__title") ||
+        document.createElement("div");
+    var button = document.querySelector(".header__upButton") ||
+        document.createElement("div");
+    var heightOfWindow = window.innerHeight;
+    var position = element.getBoundingClientRect().top;
+    console.log({ position: position });
+    console.log({ heightOfWindow: heightOfWindow });
+    if (position < heightOfWindow) {
+        button.classList.add("header__upButton-active");
+    }
+    else {
+        button.classList.remove("header__upButton-active");
+    }
+});
+var button = document.querySelector(".header__upButton") || document.createElement("div");
+button.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
