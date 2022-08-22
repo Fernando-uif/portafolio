@@ -159,7 +159,6 @@ window.addEventListener("scroll", () => {
 
   if (+widthOfWindow > 475) {
     for (let i = 0; i < 2; i++) {
-      console.log(position);
       let element: HTMLElement = spanAnimations[randoNumber] as HTMLElement;
       if (+position <= 100 && +position >= 50) {
         element.classList.add("projects__vibrate");
@@ -187,13 +186,11 @@ window.addEventListener("scroll", () => {
     document.createElement("div");
   const heightOfWindow = window.innerHeight;
   const position = element.getBoundingClientRect().top;
-  console.log({ position });
-  console.log({ heightOfWindow });
   if (position < heightOfWindow) {
     button.classList.add("header__upButton-active");
   } else {
     button.classList.remove("header__upButton-active");
-  }
+  }  
 });
 
 let button: HTMLDivElement =
