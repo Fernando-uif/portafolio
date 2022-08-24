@@ -163,7 +163,7 @@ body {
     animation: scaleRotate 1s ease-in-out alternate 2; }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(41, 41, 128, 0.8), rgba(25, 102, 161, 0.8)), url("../assets/code-image.jpg");
+  background-image: linear-gradient(to right bottom, rgba(41, 41, 128, 0.8), rgba(25, 102, 161, 0.8)), url("https://res.cloudinary.com/fersan/image/upload/v1654382802/ediuqoejbgqmjcy0x9o7.jpg");
   height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
