@@ -36,11 +36,11 @@
           rgba(255, 255, 255, 0.9) 50%,
           transparent 50%
         ),
-        url("../assets/info.jpg");
+        url("https://res.cloudinary.com/fersan/image/upload/v1661307568/ebakcdtka6uqvgpvxths.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      @media screen and (max-width: $screen-md) {
+      @media screen and (max-width: $screen-md) { 
         width: 70rem;
       }
       @media screen and (max-width: $screen-xsm) {
@@ -51,7 +51,7 @@
             rgba(255, 255, 255, 0.9) 100%,
             transparent 50%
           ),
-          url("../assets/info.jpg");
+          url("https://res.cloudinary.com/fersan/image/upload/v1661307568/ebakcdtka6uqvgpvxths.jpg");
         width: 25rem;
       }
       @media screen and (max-width: $screen-xxxsm) {
