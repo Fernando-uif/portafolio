@@ -220,10 +220,10 @@ body {
     display: flex;
     height: 5rem;
     justify-content: center;
-    left: calc(100vw - 10rem);
+    right: 5rem;
     opacity: 0;
     position: fixed;
-    top: calc(100vh - 10rem);
+    bottom: 5rem;
     transition: opacity 0.5s ease;
     width: 5rem;
     z-index: 50; }
@@ -234,9 +234,10 @@ body {
       background-color: #ffc10a; }
     .header__upButton-active {
       opacity: 1; }
-    @media screen and (max-width: 435px) {
+    @media screen and (max-width: 500px) {
       .header__upButton {
-        left: calc(100vw - 8rem); } }
+        bottom: 3rem;
+        right: 3rem; } }
 
 @media screen and (max-width: 435px) {
   .aboutme__title {

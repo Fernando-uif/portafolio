@@ -22,7 +22,7 @@
     position: absolute;
     left: calc(100vw / 2 - 35rem);
     top: 6rem;
-    text-align: center;  
+    text-align: center;
     transform: translateX(-200%);
     animation: deslizar 2s ease 0.6s forwards;
     @media screen and (max-width: $screen-sm) {
@@ -73,10 +73,12 @@
     display: flex;
     height: 5rem;
     justify-content: center;
-    left: calc(100vw - 10rem);
+    // right: calc(100vw - 10rem);
+    right: 5rem;
     opacity: 0;
     position: fixed;
-    top: calc(100vh - 10rem);
+    // bottom: calc(100vh - 10rem);
+    bottom: 5rem;
     transition: opacity 0.5s ease;
     width: 5rem;
     z-index: 50;
@@ -91,8 +93,9 @@
     &-active {
       opacity: 1;
     }
-    @media screen and(max-width:$screen-xxsm) {
-      left: calc(100vw - 8rem);
+    @media screen and(max-width:$screen-xsm) {
+      bottom: 3rem;
+      right: 3rem;
     }
   }
 }
