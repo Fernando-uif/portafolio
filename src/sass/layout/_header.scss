@@ -58,6 +58,7 @@
   &__greeting-1,
   &__greeting-2,
   &__rol {
+    font-weight: 800;
     @media screen and (max-width: $screen-sm) {
       font-size: $font-size-cellphone-lg;
     }
