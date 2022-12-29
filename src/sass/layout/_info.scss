@@ -37,14 +37,14 @@
       }
       @media screen and (max-width: $screen-sm) {
         width: 70vw;
-      }
+      }  
       @media screen and (max-width: $screen-xxsm) {
         font-size: $font-size-cellphone-md;
       }
     }
     &-photo img {
       border-radius: 9.5rem;
-      width: 25rem;
+      width: 32rem;
       @media screen and (max-width: $screen-md) {
         width: 20rem;
         margin-bottom: 4rem;

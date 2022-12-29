@@ -206,12 +206,14 @@ body {
     padding-bottom: 0.1rem; }
   .header__rol {
     letter-spacing: 1.2rem; }
-  @media screen and (max-width: 768px) {
-    .header__greeting-1, .header__greeting-2, .header__rol {
-      font-size: 1.8rem; } }
-  @media screen and (max-width: 500px) {
-    .header__greeting-1, .header__greeting-2, .header__rol {
-      font-size: 1.4rem; } }
+  .header__greeting-1, .header__greeting-2, .header__rol {
+    font-weight: 800; }
+    @media screen and (max-width: 768px) {
+      .header__greeting-1, .header__greeting-2, .header__rol {
+        font-size: 1.8rem; } }
+    @media screen and (max-width: 500px) {
+      .header__greeting-1, .header__greeting-2, .header__rol {
+        font-size: 1.4rem; } }
   .header__upButton {
     align-items: center;
     background-color: #ffc824;
@@ -275,7 +277,7 @@ body {
         font-size: 1.4rem; } }
   .aboutme__container-photo img {
     border-radius: 9.5rem;
-    width: 25rem; }
+    width: 32rem; }
     @media screen and (max-width: 992px) {
       .aboutme__container-photo img {
         width: 20rem;
